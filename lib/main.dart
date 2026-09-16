@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:taller1/card.dart';
 
 void main() {
   runApp(const AppEquipo());
@@ -6,6 +7,7 @@ void main() {
 
 class AppEquipo extends StatelessWidget {
   const AppEquipo({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -19,36 +21,22 @@ class AppEquipo extends StatelessWidget {
         ),
         body: ListView(
           padding: const EdgeInsets.all(16),
-          children: [
-            Card (
-              child: Padding(
-                padding: const EdgeInsets.all(12),
-                child: Row(
-                  children: [
-                    const CircleAvatar(
-                      radius: 30,
-                      backgroundColor: Color(0xFFDBE8FB),
-                      child: Text('L'),
-                    ),
-                    const SizedBox(width:12),
+          children: const [
+            TarjetaPersona(
+              inicial: 'L',
+              nombre: 'Levis Ortiz',
+              descripcion: 'Gestor de desarrollo',
+              funcion: "Supervisa El proyecto",
+              foto: 'assets/dic.png'
 
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Levis Ortiz',
-                          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-                        ),
-                        Text(
-                          'Lider de Desarrollo',
-                          style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              )
-            )
+            ),
+            TarjetaPersona(
+              inicial: 'M',
+              nombre: 'Miguel Rodriguez',
+              descripcion: 'Desarrollador',
+              funcion: "Hace Realidad el proyecto",
+              foto: 'assets/migue.png'
+            ),
           ],
         ),
       ),
