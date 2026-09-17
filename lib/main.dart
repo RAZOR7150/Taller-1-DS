@@ -27,7 +27,7 @@ class AppEquipo extends StatelessWidget {
               nombre: 'Levis Ortiz',
               descripcion: 'Gestor de desarrollo',
               funcion: "Supervisa El proyecto",
-              foto: 'assets/dic.png'
+              foto: 'assest/dic.png'
 
             ),
             TarjetaPersona(
@@ -35,7 +35,7 @@ class AppEquipo extends StatelessWidget {
               nombre: 'Miguel Rodriguez',
               descripcion: 'Desarrollador',
               funcion: "Hace Realidad el proyecto",
-              foto: 'assets/migue.png'
+              foto: 'assest/migue.png'
             ),
           ],
         ),
